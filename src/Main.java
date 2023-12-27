@@ -1,4 +1,5 @@
 import list.MyArrayList;
+import list.MyLinkedList;
 import list.MyList;
 
 import java.util.Collection;
@@ -14,6 +15,26 @@ public class Main {
         System.out.println(list.get(0));
         list.delete(1);
         System.out.println(list);
+
+
+        // HOMEWORK
+        MyLinkedList<String> linkedList = new MyLinkedList<>();
+
+        linkedList.addLast("Dostaevskiy");
+        linkedList.addLast("Pushkin");
+        linkedList.addLast("Dovlatov");
+        linkedList.addLast("Aristotel");
+        linkedList.addLast("Esenin");
+        System.out.println("LinkedList - " + linkedList);
+
+        linkedList.addFirst("Kafka");
+        System.out.println("LinkedList - " + linkedList);
+
+        System.out.println("Индекс элемента - " + linkedList.get("Aristotel"));
+        System.out.println("Индекс элемента - " + linkedList.get("Tolstoy"));
+
+        linkedList.remove("Kafka");
+        System.out.println("LinkedList - " + linkedList);
 
 
     }
